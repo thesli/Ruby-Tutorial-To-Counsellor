@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body{
+		position: relative;
+	}
+	iframe{
+		height:1000px;
+		width: 100%;
+		position: relative;
+	}
+	</style>
+	<script src="http://localhost:1337/livereload.js"></script>
+</head>
+<body>
+	<h1>If the Test Result doesn't appear,It means your code probably is not running</h1>
+</body>
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script>
+setTimeout(
+	function(){
+		$("body").html('<iframe src="test.html" frameborder="0" id="max"></iframe>');
+	},1000);
+	
+</script>
+
+</html>
